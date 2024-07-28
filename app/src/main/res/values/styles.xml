@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSearchview" parent="Widget.AppCompat.SearchView">
+        <item name="android:background"></item>
+    </style>
+</resources>

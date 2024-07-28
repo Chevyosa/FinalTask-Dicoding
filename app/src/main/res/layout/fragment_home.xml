@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.Home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Greetings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, Riyan"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/TitleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Picks, Best Prices"
+            android:layout_below="@id/Greetings"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user"
+            android:layout_marginTop="37.5dp"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true" />
+        <SearchView
+            android:id="@+id/SearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search"
+            android:iconifiedByDefault="false"
+            android:layout_below="@id/TitleDescription"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/searchview_background">
+        </SearchView>
+        <LinearLayout
+            android:id="@+id/buttongroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/SearchBar">
+            <Button
+                android:id="@+id/PopularButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/text_color_selector"
+                android:textAllCaps="false"
+                android:text="Popular"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/icon_popular"
+                android:drawablePadding="5dp"
+                android:layout_below="@id/SearchBar"
+                android:background="@drawable/button_selector">
+            </Button>
+            <Button
+                android:id="@+id/FavoriteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/text_color_selector"
+                android:textAllCaps="false"
+                android:text="Favorite"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/icon_favorite"
+                android:drawablePadding="5dp"
+                android:layout_below="@id/SearchBar"
+                android:background="@drawable/button_selector">
+            </Button>
+            <Button
+                android:id="@+id/LowestPriceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/text_color_selector"
+                android:textAllCaps="false"
+                android:text="Lowest Price"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/icon_lowest_price"
+                android:drawablePadding="5dp"
+                android:layout_below="@id/SearchBar"
+                android:background="@drawable/button_selector">
+            </Button>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/buttongroup"
+            app:cardBackgroundColor="#EEEEEE">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ini card Pertama"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>
